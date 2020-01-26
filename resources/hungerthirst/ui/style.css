@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Circular';
+  src: url("fonts/Circular-Bold.woff2") format("woff2"), url("fonts/Circular-Bold.woff") format("woff"), url("fonts/Circular-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circular';
+  src: url("fonts/Circular-Book.woff2") format("woff2"), url("fonts/Circular-Book.woff") format("woff"), url("fonts/Circular-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: 'Circular', sans-serif;
+  font-weight: normal;
+  overflow: hidden;
+  height: 100%; }
+
+.test {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.hud {
+  position: absolute;
+  bottom: 120px;
+  left: 1680px;
+  width: 230px; }
+  .hud .container {
+    position: absolute;
+    width: 195px;
+    height: 55px;
+    padding: 5px 1em 0 2em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(14, 14, 15, 0.74);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px; }
+    .hud .container .type {
+      width: 122px;
+      height: 12px;
+      margin: 5px 0; }
+      .hud .container .type .svg {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: -4px;
+        width: 14px;
+        text-align: center; }
+      .hud .container .type .progress {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: -4px;
+        margin-left: 8px;
+        width: calc(100% - 22px);
+        height: 7px;
+        background-color: rgba(187, 200, 222, 0.3);
+        border-radius: 10px; }
+        .hud .container .type .progress div {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #BBC8DE;
+          border-radius: 10px; }
+          .thirst div {
+            background-color: #1E88E5!important;
+          }
+          .hunger div {
+            background-color: #FB8C00!important;
+          }
+  .hud .icons {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: -16px; }

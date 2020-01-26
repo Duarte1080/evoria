@@ -1,0 +1,6 @@
+Il vous suffit d'ajouter le SQL 
+
+Lors de l'achat d'un véhicule dans esx_vehicleshop ajouter :
+
+
+TriggerServerEvent('esx_vehiclelock:registerkey', vehicleProps.plate, GetPlayerServerId(closestPlayer))
